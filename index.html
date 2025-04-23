@@ -3,44 +3,77 @@
   <head>
   	<title>2B2</title>
   	<style>
+      *,
+      ::after,
+      ::before,
+      ::backdrop,
+      ::file-selector-button {
+        box-sizing: border-box; /* 1 */
+        margin: 0; /* 2 */
+        padding: 0; /* 2 */
+        border: 0 solid; /* 3 */
+      }
+      html,
+      :host {
+        line-height: 1.5; /* 1 */
+        -webkit-text-size-adjust: 100%; /* 2 */
+        tab-size: 4; /* 3 */
+        font-family: --theme(
+          --default-font-family,
+          ui-sans-serif,
+          system-ui,
+          sans-serif,
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
+          'Noto Color Emoji'
+        ); /* 4 */
+        font-feature-settings: --theme(--default-font-feature-settings, normal); /* 5 */
+        font-variation-settings: --theme(--default-font-variation-settings, normal); /* 6 */
+        -webkit-tap-highlight-color: transparent; /* 7 */
+      }    
       body {
-          min-height: 100vh;
-          padding: 32px;
-          position: relative;
-          background-color: #F7F8F7;
+        min-height: 100vh;
+        position: relative;
+        background-color: #F7F8F7;
+        margin: 0;
+        padding: 0;
       }
       section {
+      	margin: 0;
       	display: flex;
-          flex-direction: column;
-          position: absolute;
-          top: 40%;
-          transform: translateY(-50%);
+        padding: 32px;
+        flex-direction: column;
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
       }
       footer {
       	position: absolute;
-          bottom: 0;
-          margin: 0;
-          font-size: 0.7rem;
-          color: #A9A9A9;
+        bottom: 0;
+        margin: 0;
+        font-size: 0.7rem;
+        color: #A9A9A9;
+        padding: 10px 32px;
       }
       h1 {
       	color: #434343;
-          line-height: 1;
-          padding: 0;
-          margin: 0;
+        line-height: 1;
+        padding: 0;
+        margin: 0;
       }
       p {
       	color: #A9A9A9;
-          margin: 0;
-          margin-top: 10px;
-          
+        margin: 0;
+        margin-top: 10px;
+        font-weight: 500;
       }
-      </style>
+    </style>
   </head>
   <body>
     <section>
-    <h1>2B2 INVESTMENTS</h1>
-    <p>COMING SOON</p>	
+      <h1>2B2 INVESTMENTS</h1>
+      <p>COMING SOON</p>	
     </section>
   </body>
   <footer>©2025 2B2 INVESTMENTS. ALL RIGHTS RESERVED.</footer>
